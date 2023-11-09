@@ -1,0 +1,18 @@
+.price{
+    transition: 1s;
+}
+.price:hover{
+    transform: scale(1.1,1.1);
+}
+.vertical-div {
+    height: 100vh; 
+    width: 200px;
+    background: rgb(135, 207, 235);
+    position: absolute;
+    position: fixed;
+    z-index: 10;
+   
+  }
+#totalprice:hover{
+    background-color: green;
+}

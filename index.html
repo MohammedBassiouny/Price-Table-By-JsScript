@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/price table.css">
+    <title>Price Table</title>
+</head>
+<body>
+    <!-- -------------------------------------------------------NAV--------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid ms-3">
+          <img src="images/logo.jpg" class="img-fluid " alt="..." width="70px" height="70px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item h4 ms-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active h4 ms-5" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle h4 ms-5 active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item h4">
+                <a class="nav-link disabled h4 ms-5" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success me-5" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- ----------------------------------------aside-------------------------------------------------------- -->
+      <aside>
+        <div  class="d-flex justify-content-end fixed-top z-3" >
+            <div id="div1" class="vertical-div "  style="width:170px ; height:80vh; margin-top:13vh;background-color: rgba(255, 255, 255, 0);">
+           <div  class="bg-success mt-5 text-center p-3 line">
+            <h2 class="h5 text-capitalize text-center">your Basket</h2>
+            <hr>
+            <p id="Basket" class="h6"></p>
+           </div>
+          <div class="d-grid bg-primary p-2 w-100 mt-5 mb-5 "><button id="totalprice" type="button" class="btn btn-block btn-outline-success " >show price</button></div>
+           <div class="bg-success text-center p-2">
+            <h6 class="h5 text-capitalize">total price</h6>
+            <p id="pricevalue" class="h4"></p>
+           </div>
+            </div> 
+          </div>
+      </aside>
+
+      <!-- ---------------------------------------price table-------------------------------------------------- -->
+     <div class="container">
+        <div class="conainer-fluid mt-5  mb-5 pt-1" >
+            <h1 class="text-center  text-capitalize fw-bolder fs-1 mt-5">pricing table</h1>
+            <div class="line-div border-primary m-auto" style="width:100px; height: 3px; border: 3px solid;"></div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-5">
+            <div class="col price">
+              <div class="card h-100 d-inline-block">
+                <img src="images/iku a12.jpg" class="card-img-top" alt="...">
+                <div id="product" class="card-body mb-0 text-center">
+                  <h5  class="card-title fw-bold text-center text-capitalize">iku a12</h5>
+                  <span class=" d-block card-text text-center text-capitalize">3Ram 32gb <br> lite</span>
+                  <p id="price" class="h2 text-center" price="3500">3500EGP</p>
+                  <button type="button" class="btn bg-info m-3">see more</button>
+                  <button type="button" id="select" class="btn bg-info ">select it </button>
+                </div>
+              </div>
+            </div>
+            <div class="col price">
+              <div class="card h-100 d-inline-block">
+                <img src="images/iku x4.jpg" class="card-img-top" alt="...">
+                <div id="product" class="card-body mb-0 text-center">
+                  <h5  class="card-title fw-bold text-center text-capitalize">iku x4</h5>
+                  <span class=" d-block card-text text-center text-capitalize">4Ram 32gb <br> lite</span>
+                  <p id="price" class="h2 text-center" price="4500">4500EGP</p>
+                  <button type="button" class="btn bg-info m-3">see more</button>
+                  <button type="button" id="select" class="btn bg-info ">select it </button>
+                </div>
+              </div>
+            </div>
+            <div class="col price">
+              <div  class="card h-100 d-inline-block">
+                <img src="images/Honor X7.jpg" class="card-img-top" alt="...">
+                <div id="product" class="card-body mb-0 text-center">
+                  <h5 class="card-title fw-bold text-center text-capitalize">Honor X7</h5>
+                  <span class=" d-block card-text text-center text-capitalize">6Ram 64gb <br> lite</span>
+                  <p id="price" class="h2 text-center" price="5500">5500EGP</p>
+                  <button type="button" class="btn bg-info m-3">see more</button>
+                  <button type="button" id="select" class="btn bg-info ">select it </button>
+                </div>
+              </div>
+            </div>
+            <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/Honor X8.jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5  class="card-title fw-bold text-center text-capitalize">Honor X8</h5>
+                    <span class=" d-block card-text text-center text-capitalize">6Ram 64gb <br> lite</span>
+                  <p id="price" class="h2 text-center" price="7000">7000EGP</p>
+                  <button type="button" class="btn bg-info m-3">see more</button>
+                  <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+            <div class="col price">
+              <div class="card h-100 d-inline-block">
+                <img src="images/Nokia C30.jpg" class="card-img-top" alt="...">
+                <div id="product" class="card-body mb-0 text-center">
+                  <h5 class="card-title fw-bold text-center text-capitalize">Nokia C30</h5>
+                  <span class=" d-block card-text text-center text-capitalize">2Ram 16gb <br> lite</span>
+                  <p id="price" class="h2 text-center" price="2200">2200EGP</p>
+                  <button type="button" class="btn bg-info m-3">see more</button>
+                  <button type="button" id="select" class="btn bg-info ">select it </button>
+                </div>
+              </div>
+            </div>
+            <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/C21 PLUS.jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">Nokia C21</h5>
+                    <span class=" d-block card-text text-center text-capitalize">4Ram 16gb <br> lite</span>
+                    <p id="price" class="h2 text-center" price="3500">3500EGP</p>
+                    <button type="button" class="btn bg-info m-3">see more</button>
+                    <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/Nokia C10.jpg" class="card-img-top" alt="..." >
+                  <div id="product" class="card-body mb-0 mt-5 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">NOKIA C22</h5>
+                    <span class=" d-block card-text text-center text-capitalize">6Ram 32gb <br> lite</span>
+                    <p id="price" class="h2 text-center" price="5100">5100EGP</p>
+                    <button type="button" class="btn bg-info m-3">see more</button>
+                    <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/NOKIA C21 PLUS.jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">NOKIA C24</h5>
+                    <span class=" d-block card-text text-center text-capitalize">6Ram 64gb <br> lite</span>
+                  <p id="price" class="h2 text-center" price="8500">8500EGP</p>
+                  <button type="button" class="btn bg-info m-3">see more</button>
+                  <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/Samsung Galaxy A53 5G.jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">Samsung A53</h5>
+                    <span class=" d-block card-text text-center text-capitalize">8Ram 128gb <br> lite</span>
+                    <p id="price" class="h2 text-center" price="10500">10500EGP</p>
+                    <button type="button" class="btn bg-info m-3">see more</button>
+                    <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/Samsung Galaxy A54 .jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">Samsung A54</h5>
+                    <span class=" d-block card-text text-center text-capitalize">6Ram 128gb <br> lite</span>
+                    <p id="price" class="h2 text-center" price="9500">9500EGP</p>
+                    <button type="button" class="btn bg-info m-3">see more</button>
+                    <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col price">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/Samsung Galaxy M52 5G.jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">Samsung M52</h5>
+                    <span class=" d-block card-text text-center text-capitalize">8Ram 256gb <br> lite</span>
+                    <p id="price" class="h2 text-center" price="13500">13500EGP</p>
+                    <button type="button" class="btn bg-info m-3">see more</button>
+                    <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col price ">
+                <div class="card h-100 d-inline-block">
+                  <img src="images/Samsung Galaxy Z Fold5.jpg" class="card-img-top" alt="...">
+                  <div id="product" class="card-body mb-0 text-center">
+                    <h5 class="card-title fw-bold text-center text-capitalize">Samsung Z5</h5>
+                    <span class=" d-block card-text text-center text-capitalize">8Ram 256gb <br> lite</span>
+                    <p id="price" class="h2 text-center" price="20500">20500EGP</p>
+                    <button type="button" class="btn bg-info m-3">see more</button>
+                    <button type="button" id="select" class="btn bg-info ">select it </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        
+     </div>
+      
+
+
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/price table.js"></script>
+</body>
+</html>
